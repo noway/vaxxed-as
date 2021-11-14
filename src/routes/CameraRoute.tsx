@@ -2,11 +2,14 @@ import { QrcodeIcon } from "@heroicons/react/outline";
 import { Link, Trans } from "gatsby-plugin-react-i18next";
 import loadable from "@loadable/component";
 import { CameraPlaceholder } from "../components/QrCamera";
-import VerificationResultDialog from "../components/VerificationResultDialog";
 
 const QrCamera = loadable(() => import("../components/QrCamera"), {
   fallback: <CameraPlaceholder />
 });
+
+const VerificationResultDialog = loadable(
+  () => import("../components/VerificationResultDialog")
+);
 
 const CameraRoute = () => {
   return (

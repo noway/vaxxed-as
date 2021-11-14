@@ -6,9 +6,9 @@ module.exports = {
   flags: {
     DEV_SSR: true,
     FAST_DEV: true,
-    PARALLEL_SOURCING: true,
-    PRESERVE_FILE_DOWNLOAD_CACHE: true,
-    PARALLEL_QUERY_RUNNING: true
+    PARALLEL_SOURCING: false,
+    PRESERVE_FILE_DOWNLOAD_CACHE: false,
+    PARALLEL_QUERY_RUNNING: false
   },
   plugins: [
     {

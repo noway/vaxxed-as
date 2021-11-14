@@ -7,13 +7,13 @@
   },
   "invalidCodes": {
     "section": {
-      "3": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
-      "2.1.0.3.3": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
-      "2.1.0.4.3": "Sorry, it looks like you COVID pass has expired. Please contact the Ministry of Health at {{link}}",
-      "4.4": "Sorry, this doesn't look to be a COVID pass. Please contact the Ministry of Health at {{link}}",
-      "5.1.1": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
-      "6.3": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
-      "default": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}"
+      "3": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
+      "2.1.0.3.3": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
+      "2.1.0.4.3": "Sorry, it looks like you COVID pass has expired. Please contact the [Ministry of Health]({{link}})",
+      "4.4": "Sorry, this doesn't look to be a COVID pass. Please contact the [Ministry of Health]({{link}})",
+      "5.1.1": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
+      "6.3": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
+      "default": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})"
     }
   },
   "verificationDialog": {

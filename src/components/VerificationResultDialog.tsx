@@ -8,7 +8,7 @@ import {
   DuplicateIcon
 } from "@heroicons/react/outline";
 import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
-import format from "date-fns/format";
+import ReactMarkdown from "react-markdown";
 import { useLocation } from "@reach/router";
 import useClipboard from "react-hook-clipboard";
 import useStores from "../hooks/useStores";
@@ -196,7 +196,7 @@ const VerificationResultDialog = () => {
                                 </Trans>
                               </h3>
                               <div className="text-gray-700">
-                                <p className="break-words">
+                                <ReactMarkdown>
                                   {translate(
                                     `invalidCodes.section.${
                                       violates?.section ?? "default"
@@ -206,11 +206,8 @@ const VerificationResultDialog = () => {
                                         violates?.link ??
                                         "https://nzcp.covid19.health.nz"
                                     }
-                                  )}{" "}
-                                  <span className="opacity-5">
-                                    {violates?.section ?? ""}
-                                  </span>
-                                </p>
+                                  )}
+                                </ReactMarkdown>
                               </div>
                             </div>
                           </div>

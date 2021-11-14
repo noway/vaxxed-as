@@ -7,13 +7,13 @@
   },
   "invalidCodes": {
     "section": {
-      "3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
-      "2.1.0.3.3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
-      "2.1.0.4.3": "Lo sentimos, parece que su COVID pass ha caducado. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
-      "4.4": "Lo sentimos, esto no parece ser un COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
-      "5.1.1": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
-      "6.3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
-      "default": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}"
+      "3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+      "2.1.0.3.3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+      "2.1.0.4.3": "Lo sentimos, parece que su COVID pass ha caducado. Comuníquese con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+      "4.4": "Lo sentimos, esto no parece ser un COVID pass. Comuníquese con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+      "5.1.1": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+      "6.3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el [Ministerio de Salud (Ministry of Health)]({{link}})",
+      "default": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el [Ministerio de Salud (Ministry of Health)]({{link}})"
     }
   },
   "verificationDialog": {
