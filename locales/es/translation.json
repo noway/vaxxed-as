@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "disclaimer": "Este no es un sitio web oficial del gobierno. Para obtener más información sobre el COVID pass, visite https://nzcp.covid19.health.nz"
+  },
+  "header": {
+    "Scan your NZ COVID pass": "Escanee su NZ COVID pass"
+  },
+  "invalidCodes": {
+    "section": {
+      "3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
+      "2.1.0.3.3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
+      "2.1.0.4.3": "Lo sentimos, parece que su COVID pass ha caducado. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
+      "4.4": "Lo sentimos, esto no parece ser un COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
+      "5.1.1": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
+      "6.3": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}",
+      "default": "Lo sentimos, no pudimos verificar su COVID pass. Comuníquese con el Ministerio de Salud (Ministry of Health) en {{link}}"
+    }
+  },
+  "verificationDialog": {
+    "Attention needed": "Atención necesaria",
+    "Close": "Cerrar",
+    "Copy results": "Copiar resultados",
+    "Date of birth": "Fecha de cumpleaños",
+    "First name": "Primer nombre",
+    "Last name": "Apellido",
+    "Verification results": "Resultados de la verificación"
+  }
+}

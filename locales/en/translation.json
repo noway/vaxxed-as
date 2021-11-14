@@ -1,0 +1,28 @@
+{
+  "footer": {
+    "disclaimer": "This is not an official Government website. For more information about the COVID pass, please go to https://nzcp.covid19.health.nz"
+  },
+  "header": {
+    "Scan your NZ COVID pass": "Scan your NZ COVID pass"
+  },
+  "invalidCodes": {
+    "section": {
+      "3": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
+      "2.1.0.3.3": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
+      "2.1.0.4.3": "Sorry, it looks like you COVID pass has expired. Please contact the Ministry of Health at {{link}}",
+      "4.4": "Sorry, this doesn't look to be a COVID pass. Please contact the Ministry of Health at {{link}}",
+      "5.1.1": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
+      "6.3": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}",
+      "default": "Sorry, we could not verify your COVID pass. Please contact the Ministry of Health at {{link}}"
+    }
+  },
+  "verificationDialog": {
+    "Attention needed": "Attention needed",
+    "Close": "Close",
+    "Copy results": "Copy results",
+    "Date of birth": "Date of birth",
+    "First name": "First name",
+    "Last name": "Last name",
+    "Verification results": "Verification results"
+  }
+}
