@@ -38,7 +38,7 @@ module.exports = {
         localize: [
           {
             start_url: "/es/",
-            lang: "zh-Hans-CN",
+            lang: "es",
             name: "Vaxxed As!",
             short_name: "vaxxed as",
             description: "Escanee su NZ COVID pass"
