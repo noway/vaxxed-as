@@ -21,7 +21,7 @@ const CameraRoute = () => {
             <h1 className="text-2xl font-bold">vaxxed.as</h1>
           </Link>
           <div className="px-4">
-            <h2 className="text-2xl font-bold">
+            <h2 className="text-lg font-bold leading-tight md:text-2xl">
               <Trans i18nKey="header.Scan your NZ COVID pass">
                 Scan your NZ COVID pass
               </Trans>

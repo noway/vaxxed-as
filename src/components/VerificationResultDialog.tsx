@@ -195,8 +195,8 @@ const VerificationResultDialog = () => {
                                   Attention needed
                                 </Trans>
                               </h3>
-                              <div>
-                                <p>
+                              <div className="text-gray-700">
+                                <p className="break-words">
                                   {translate(
                                     `invalidCodes.section.${
                                       violates?.section ?? "default"
