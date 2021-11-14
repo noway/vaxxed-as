@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="isolation:isolate" viewBox="0 0 500 500">
-    <path fill="#EBEBEB" d="M0 0h500v500H0z"/>
+    <path fill="#FFF" d="M0 0h500v500H0z"/>
     <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#5D5D5D" stroke-linejoin="round" stroke-linecap="round" d="M249.886 67.794V90.57"/>
     <path vector-effect="non-scaling-stroke" stroke-width="60" stroke="#FFC500" stroke-linejoin="round" stroke-linecap="round" d="M386.54 341.103h45.552"/>
     <path d="M295.438 341.103h-45.552v91.103" fill="none" vector-effect="non-scaling-stroke" stroke-width="60" stroke="#5D5D5D" stroke-linejoin="round" stroke-linecap="round"/>

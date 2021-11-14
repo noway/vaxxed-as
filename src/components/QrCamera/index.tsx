@@ -253,9 +253,11 @@ const QrCamera = () => {
               className="absolute items-center justify-center hidden w-20 h-20 p-2 text-center bg-gray-900 bg-opacity-50 rounded-full shadow-sm right-4 bottom-4 lg:flex hover:bg-gray-800 focus:outline-none"
               type="button"
               onClick={() => {
-                setDeviceSelected(deviceSelected + 1);
-                if (deviceSelected >= availableDevices.length) {
-                  setDeviceSelected(0);
+                if (availableDevices.length > 1) {
+                  setDeviceSelected(deviceSelected + 1);
+                  if (deviceSelected >= availableDevices.length) {
+                    setDeviceSelected(0);
+                  }
                 }
               }}
             >
