@@ -23,7 +23,30 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png"
+        background_color: "rgb(55, 65, 81)",
+        cache_busting_mode: "none",
+        description: "Scan your NZ COVID pass",
+        dir: "ltr",
+        display: "standalone",
+        icon: "src/images/icon.svg",
+        lang: "en",
+        legacy: true,
+        name: "Vaxxed As!",
+        short_name: "vaxxed as",
+        start_url: "/",
+        theme_color: "rgb(55, 65, 81)",
+        localize: [
+          {
+            start_url: "/es/",
+            lang: "zh-Hans-CN",
+            name: "Vaxxed As!",
+            short_name: "vaxxed as",
+            description: "Escanee su NZ COVID pass"
+          }
+        ],
+        icon_options: {
+          purpose: "any maskable"
+        }
       }
     },
     {
@@ -56,5 +79,13 @@ module.exports = {
     "gatsby-plugin-use-query-params",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-offline"
+    // ,{
+    //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+    //   options: {
+    //     analyzerMode: "static",
+    //     generateStatsFile: true,
+    //     openAnalyzer: true
+    //   }
+    // }
   ]
 };
