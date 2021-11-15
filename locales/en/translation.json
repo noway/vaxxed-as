@@ -3,18 +3,17 @@
     "disclaimer": "This is not an official Government website. For more information about the COVID pass, please go to https://nzcp.covid19.health.nz"
   },
   "header": {
+    "Change language": "Change language",
     "Scan your NZ COVID pass": "Scan your NZ COVID pass"
   },
   "invalidCodes": {
-    "section": {
-      "3": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
-      "2.1.0.3.3": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
-      "2.1.0.4.3": "Sorry, it looks like you COVID pass has expired. Please contact the [Ministry of Health]({{link}})",
-      "4.4": "Sorry, this doesn't look to be a COVID pass. Please contact the [Ministry of Health]({{link}})",
-      "5.1.1": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
-      "6.3": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
-      "default": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})"
-    }
+    "expired": "Sorry, it looks like you COVID pass has expired. Please contact the [Ministry of Health]({{link}})",
+    "invalid": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
+    "notAcovidPass": "Sorry, this doesn't look to be a COVID pass. Please contact the [Ministry of Health]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Use vaxxed.as in English",
+    "name": "English"
   },
   "verificationDialog": {
     "Attention needed": "Attention needed",

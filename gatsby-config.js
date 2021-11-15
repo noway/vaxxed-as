@@ -1,3 +1,5 @@
+const { languages, localize } = require("./i18n.json");
+
 module.exports = {
   siteMetadata: {
     siteUrl: "https://vaxxed.as",
@@ -36,15 +38,7 @@ module.exports = {
         short_name: "vaxxed as",
         start_url: "/",
         theme_color: "rgb(55, 65, 81)",
-        localize: [
-          {
-            start_url: "/es/",
-            lang: "es",
-            name: "Vaxxed As!",
-            short_name: "vaxxed as",
-            description: "Escanee su NZ COVID pass"
-          }
-        ],
+        localize,
         icon_options: {
           purpose: "any maskable"
         }
@@ -62,7 +56,7 @@ module.exports = {
       options: {
         defaultLanguage: "en",
         generateDefaultLanguagePage: false,
-        languages: ["en", "es"],
+        languages,
         redirect: true,
         siteUrl: "https://vaxxed.as",
         i18nextOptions: {

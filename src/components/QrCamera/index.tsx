@@ -9,8 +9,7 @@ import useStores from "../../hooks/useStores";
 import ViewFinder from "./ViewFinder";
 import QRcodeWorker from "../../workers/QRcode.worker.ts";
 
-const delay = 500;
-const facingMode = FacingMode.REAR;
+const delay = 1000;
 const resolution = 1200;
 type ParseQrcodeProps = { imageData: ImageData };
 
@@ -21,6 +20,9 @@ const CameraPlaceholder = () => (
 );
 
 const QrCamera = () => {
+  const [currentFacingMode, setFacingMode] = useState<FacingMode>(
+    FacingMode.ENVIRONMENT
+  );
   const [availableDevices, setAvailableDevices] = useState<MediaDeviceInfo[]>(
     []
   );
@@ -158,7 +160,7 @@ const QrCamera = () => {
     const constraints = { facingMode: null, frameRate: null };
 
     if (supported?.facingMode) {
-      constraints.facingMode = { ideal: facingMode };
+      constraints.facingMode = { ideal: currentFacingMode };
     }
     if (supported?.frameRate) {
       constraints.frameRate = { ideal: 25, min: 10 };
@@ -190,16 +192,12 @@ const QrCamera = () => {
         .catch(() => null);
 
       vConstraintsPromise
-        .then((video: unknown) =>
+        .then(() =>
           navigator?.mediaDevices?.getUserMedia({
             audio: false,
-            video: mobile
-              ? {
-                  facingMode: {
-                    exact: "environment"
-                  }
-                }
-              : video
+            video: {
+              facingMode: currentFacingMode
+            }
           })
         )
         .then(handleVideo)
@@ -248,25 +246,29 @@ const QrCamera = () => {
               <ViewFinder className="w-full h-full text-blue-400 animate-pulse" />
             </div>
           </div>
-          {availableDevices?.length > 0 && (
-            <button
-              className="absolute items-center justify-center hidden w-20 h-20 p-2 text-center bg-gray-900 bg-opacity-50 rounded-full shadow-sm right-4 bottom-4 lg:flex hover:bg-gray-800 focus:outline-none"
-              type="button"
-              onClick={() => {
-                if (availableDevices.length > 1) {
-                  setDeviceSelected(deviceSelected + 1);
-                  if (deviceSelected >= availableDevices.length) {
-                    setDeviceSelected(0);
-                  }
+          <button
+            className="absolute z-10 items-center justify-center w-20 h-20 p-2 text-center bg-gray-900 bg-opacity-50 rounded-full shadow-sm right-4 bottom-4 hover:bg-gray-800 focus:outline-none"
+            type="button"
+            onClick={() => {
+              if (availableDevices.length > 1) {
+                setDeviceSelected(deviceSelected + 1);
+                if (deviceSelected >= availableDevices.length) {
+                  setDeviceSelected(0);
                 }
-              }}
-            >
-              <FlipCamera
-                aria-hidden="true"
-                className="inline-block text-white w-14 h-14"
-              />
-            </button>
-          )}
+                return;
+              }
+              if (currentFacingMode === FacingMode.USER) {
+                setFacingMode(FacingMode.ENVIRONMENT);
+                return;
+              }
+              setFacingMode(FacingMode.USER);
+            }}
+          >
+            <FlipCamera
+              aria-hidden="true"
+              className="inline-block text-white w-14 h-14"
+            />
+          </button>
         </div>
         <canvas ref={canvasRef} className="hidden" />
         {isPermissionDenied && <CameraPlaceholder />}

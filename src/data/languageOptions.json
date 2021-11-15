@@ -1,0 +1,17 @@
+[
+  {
+    "value": "en",
+    "name": "English",
+    "callToAction": "Use vaxxed.as in English"
+  },
+  {
+    "value": "es",
+    "name": "Español",
+    "callToAction": "Utilice vaxxed.as en Español"
+  },
+  {
+    "value": "mi",
+    "name": "Te reo Māori",
+    "callToAction": "Whakamahia te vaxxed.as i te reo Māori"
+  }
+]
