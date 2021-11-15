@@ -1,4 +1,4 @@
-const { languages, localize } = require("./i18n.json");
+const { languages, localize, precachePages } = require("./i18n.json");
 
 module.exports = {
   siteMetadata: {
@@ -73,7 +73,12 @@ module.exports = {
     "gatsby-plugin-workerize-loader",
     "gatsby-plugin-use-query-params",
     "gatsby-plugin-robots-txt",
-    "gatsby-plugin-offline"
+    {
+      resolve: "gatsby-plugin-offline",
+      options: {
+        precachePages
+      }
+    }
     // ,{
     //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
     //   options: {

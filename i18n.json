@@ -19,5 +19,9 @@
       "short_name": "vaxxed.as",
       "start_url": "/mi/"
     }
+  ],
+  "precachePages": [
+    "/es/",
+    "/mi/"
   ]
 }

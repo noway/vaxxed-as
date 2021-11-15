@@ -69,7 +69,18 @@ const createLanguages = async (): Promise<void> => {
     }
   );
 
-  await outputJSON("./i18n.json", { languages, localize }, JSON_OUTPUT_OPTIONS);
+  const precachePages = translations
+    .filter(({ language }) => language !== "en")
+    .map(({ language }) => {
+      const page = `/${language}/`;
+      return page;
+    });
+
+  await outputJSON(
+    "./i18n.json",
+    { languages, localize, precachePages },
+    JSON_OUTPUT_OPTIONS
+  );
 
   await outputJSON(
     "./src/data/languageOptions.json",
