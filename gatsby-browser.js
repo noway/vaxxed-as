@@ -14,7 +14,7 @@ const onServiceWorkerUpdateFound = () => {
   window.swUpdate = true;
 };
 
-const onServiceWorkerUpdateReady = () => {
+const onServiceWorkerUpdateReady = async () => {
   window.dispatchEvent(new Event("resize"));
   if (caches) {
     await caches
