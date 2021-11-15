@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "build": "yarn gatsby:clean && gatsby:build",
+    "build": "gatsby:build",
     "commit": "gacp",
     "create-languages": "tsm ./scripts/createLanguages.ts",
     "gatsby:build": "gatsby build --no-color",
@@ -17,7 +17,7 @@
     "gatsby:serve": "gatsby serve -H 0.0.0.0 -p 8001",
     "format": "prettier --write \"./**/*.{js,ts,css,json,md,mdx,html,yml,yaml,pcss,jsx,tsx}\"",
     "format:locales": "prettier --write \"./locales/**/*.{js,ts,css,json,md,mdx,html,yml,yaml,pcss,jsx,tsx}\"",
-    "postinstall": "patch-package && yarn gatsby:clean",
+    "postinstall": "patch-package",
     "lint": "eslint . --ext .tsx,.ts,.jsx,.js,.css,.scss",
     "lint:fix": "yarn lint --fix",
     "lint:package": "sort-package-json",
@@ -26,7 +26,6 @@
     "localazy:upload": "export $(xargs <.env.development) && localazy upload -r $LOCALAZY_READ_KEY -w $LOCALAZY_WRITE_KEY",
     "postbuild:clear": "rm -rf -d ./public/**/*.map && rm -rf -d ./public/*.LICENSE.txt",
     "postbuild:sourcemaps": "node ./scripts/removeSourceMaps.mjs",
-    "prebuild": "yarn gatsby:clean",
     "prepare": "husky install",
     "release": "standard-version",
     "release:major": "standard-version --release-as major  --no-verify",
