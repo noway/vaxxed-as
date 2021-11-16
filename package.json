@@ -182,7 +182,8 @@
     "web-did-resolver": "2.0.8",
     "webpack-bundle-analyzer-brotli": "4.0.0",
     "webrtc-adapter": "8.1.0",
-    "zod": "3.11.6"
+    "zod": "3.11.6",
+    "@vaxxnz/nzcp": "^0.1.5"
   },
   "engines": {
     "node": ">=14.18.1",
