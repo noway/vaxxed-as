@@ -35,6 +35,17 @@ const VerificationResultDialog = () => {
     }
   }: VerificationStatus = verificationStatus;
 
+  const getTranslation = (code: string) => {
+    switch (code) {
+      case "2.1.0.4.3":
+        return "expired";
+      case "4.4":
+        return "notAcovidPass";
+      default:
+        return "invalid";
+    }
+  };
+
   const closeDialog = () => {
     uiStore.resetVerificationStatus();
   };
@@ -196,11 +207,11 @@ const VerificationResultDialog = () => {
                                 </Trans>
                               </h3>
                               <div className="text-gray-700">
-                                <ReactMarkdown>
+                                <ReactMarkdown className="prose">
                                   {translate(
-                                    `invalidCodes.section.${
-                                      violates?.section ?? "default"
-                                    }`,
+                                    `invalidCodes.${getTranslation(
+                                      violates?.section
+                                    )}`,
                                     {
                                       link:
                                         violates?.link ??
