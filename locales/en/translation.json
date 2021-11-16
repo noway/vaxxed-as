@@ -1,15 +1,15 @@
 {
   "footer": {
-    "disclaimer": "This is not an official Government website. For more information about the COVID pass, please go to https://nzcp.covid19.health.nz"
+    "disclaimer": "This is not an official Government website. For more information about the COVIDpass, please go to https://nzcp.covid19.health.nz"
   },
   "header": {
     "Change language": "Change language",
-    "Scan your NZ COVID pass": "Scan your NZ COVID pass"
+    "Scan your NZ COVIDpass": "Scan your NZ COVIDpass"
   },
   "invalidCodes": {
-    "expired": "Sorry, it looks like you COVID pass has expired. Please contact the [Ministry of Health]({{link}})",
-    "invalid": "Sorry, we could not verify your COVID pass. Please contact the [Ministry of Health]({{link}})",
-    "notAcovidPass": "Sorry, this doesn't look to be a COVID pass. Please contact the [Ministry of Health]({{link}})"
+    "expired": "Sorry, it looks like you COVIDpass has expired. Please contact the [Ministry of Health]({{link}})",
+    "invalid": "Sorry, we could not verify your COVIDpass. Please contact the [Ministry of Health]({{link}})",
+    "notAcovidPass": "Sorry, this doesn't look to be a COVIDpass. Please contact the [Ministry of Health]({{link}})"
   },
   "thisLanguage": {
     "callToAction": "Use vaxxed.as in English",

@@ -10,8 +10,28 @@
     "callToAction": "Utilice vaxxed.as en Español"
   },
   {
+    "value": "hi",
+    "name": "अंग्रेज़ी",
+    "callToAction": "हिंदी में vaxxed.as का प्रयोग करें"
+  },
+  {
     "value": "mi",
     "name": "Te reo Māori",
     "callToAction": "Whakamahia te vaxxed.as i te reo Māori"
+  },
+  {
+    "value": "sm",
+    "name": "Samoa",
+    "callToAction": "Fa'aaoga le vaxxed.as o le gagana Samoa"
+  },
+  {
+    "value": "zh-cn",
+    "name": "简体中文",
+    "callToAction": "使用 vaxxed.as 简体中文"
+  },
+  {
+    "value": "zh-hk",
+    "name": "中國傳統的",
+    "callToAction": "在繁體中文中使用 vaxxed.as"
   }
 ]

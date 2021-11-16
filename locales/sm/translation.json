@@ -1,0 +1,27 @@
+{
+  "footer": {
+    "disclaimer": "E le ose upegatafa&#39;ilagi aloaia a le Malo. Mo nisi fa&#39;amatalaga e uiga ile COVIDpass, fa&#39;amolemole alu ile https://nzcp.covid19.health.nz"
+  },
+  "header": {
+    "Change language": "Suia le gagana",
+    "Scan your NZ COVIDpass": "Va&#39;ai lau NZ COVIDpass"
+  },
+  "invalidCodes": {
+    "expired": "Fa&#39;amalie atu, e foliga mai ua mae&#39;a lau COVIDpass. Fa&#39;amolemole fa&#39;afeso&#39;ota&#39;i le [Matagaluega o le Soifua Maloloina (Ministry of Health)]({{link}})",
+    "invalid": "Fa&#39;amalie atu, matou te le mafai ona fa&#39;amaonia lau COVIDpass. Fa&#39;amolemole fa&#39;afeso&#39;ota&#39;i le [Matagaluega o le Soifua Maloloina (Ministry of Health)]({{link}})",
+    "notAcovidPass": "Fa&#39;amalie atu, e le o se COVIDpass lea. Fa&#39;amolemole fa&#39;afeso&#39;ota&#39;i le [Matagaluega o le Soifua Maloloina (Ministry of Health)]({{link}})"
+  },
+  "thisLanguage": {
+    "callToAction": "Fa'aaoga le vaxxed.as o le gagana Samoa",
+    "name": "Samoa"
+  },
+  "verificationDialog": {
+    "Attention needed": "Manaomia le gauai",
+    "Close": "Tapuni",
+    "Copy results": "Kopi i&#39;uga",
+    "Date of birth": "Aso fanau",
+    "First name": "Igoa muamua",
+    "Last name": "Faʻaiu",
+    "Verification results": "I&#39;uga fa&#39;amaoniga"
+  }
+}
