@@ -1,10 +1,10 @@
 import { base32Parse } from "../rfc4648";
-import did from "./did";
 import { addBase32Padding } from "./util";
 import { validateCOSESignature } from "./crypto";
 import { parseCWTClaims, parseCWTHeaders, validateCWTClaims } from "./cwt";
 import { VerificationResult } from "./types";
 import { decodeCBOR } from "./cbor";
+import did from "../../data/did.json";
 
 /* 
   The function below implements v1 of NZ COVID Pass - Technical Specification
@@ -226,16 +226,15 @@ const verifyPassURIWithTrustedIssuers = async (
   //     "did:web:nzcp.covid19.health.nz#key-1"
   //   ]
   // }
-  const didResult = await did.resolve(iss);
 
-  if (didResult.didResolutionMetadata.error) {
+  if (did.didResolutionMetadata.error) {
     // an error came back from the offical DID reference implementation
     // this handles a bunch of clauses in https://nzcp.covid19.health.nz/#issuer-identifier
     return {
       success: false,
       credentialSubject: null,
       violates: {
-        message: didResult.didResolutionMetadata.error,
+        message: did.didResolutionMetadata.error,
         link: "https://nzcp.covid19.health.nz/#ref:DID-CORE",
         section: "DID-CORE.1"
       }
@@ -244,7 +243,7 @@ const verifyPassURIWithTrustedIssuers = async (
 
   const absoluteKeyReference = `${iss}#${cwtHeaders.kid}`;
 
-  const didDocument = didResult?.didDocument;
+  const didDocument = did?.didDocument;
 
   // 5.1.1
   // The public key referenced by the decoded CWT MUST be listed/authorized under the assertionMethod verification relationship in the resolved DID document.

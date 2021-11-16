@@ -1,3 +1,6 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`
+});
 const { languages, localize } = require("./i18n.json");
 
 module.exports = {
