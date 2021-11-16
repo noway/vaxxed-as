@@ -1,5 +1,5 @@
+import { verifyPassURIWithTrustedIssuers } from "@vaxxnz/nzcp";
 import jsQR from "jsqr";
-import { verifyPassURIWithTrustedIssuers } from "../utils/nzcp";
 
 type ParseQrcodeProps = { imageData: ImageData };
 
